@@ -1,0 +1,224 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    background-color:#ffded5;
+    ;
+    
+}
+ul{
+    list-style: none;
+}
+
+nav {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(255, 161, 135);
+    padding-top:5px;
+    height: 100px;
+    display: flex;
+    
+}
+.menu-toggle{
+
+  display: none;
+}
+.logo{
+  width: 100px;
+    height: auto;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 1.5rem;
+ 
+}
+.navLinks{
+display: flex;
+gap: 2rem;
+
+}
+
+
+a:hover {
+    color: #ff4c4c;
+   
+    transition: all  0.2s  linear ;
+  
+ 
+}
+/*  menu */
+.menuItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start; /* Prevents grid items from stretching vertically */
+}
+
+/* Individual Items */
+.items {
+  margin-top: 1rem;
+  background-color: #ffffffbe;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+  min-width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.items:hover {
+  transform: scale(1.05);
+}
+
+/* Images inside Items */
+.items img {
+  width: 100%;       /* Fills the container's width */
+  height: 300px;     /* Fixed height */
+  object-fit: cover; /* Maintains the image's aspect ratio by cropping */
+  border-radius: 8px;
+}
+
+
+#menu {
+
+    margin-top: 0;
+    padding: 4rem 0;
+    background-color:rgb(255, 185, 166);
+    text-align: center;
+   
+  }
+
+
+
+ 
+   table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4b400;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        h2 {
+            text-align: center;
+        }
+  
+  
+
+
+        .home {
+          position: relative; /* Establishes a positioning context */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          width: 100%;
+          color: white;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+          overflow: hidden; /* Hides any overflow */
+          padding: 0;
+          margin: 0;
+      }
+      
+      .bgVideo {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;  /* Fills the parent's height */
+          object-fit: cover; /* Ensures the video covers the container */
+          z-index: -1;
+      }
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    background-color: #00aced;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
+}
+
+button:hover {
+    background-color: #5bcdf3;
+    transition: all  0.2s  linear ;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    translate: -3px -3px;
+}
+/* About Section */
+
+
+/* bshdbkcj */
+
+  .collapsible {
+    cursor: pointer;
+    background-color: #f4a261;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    display: block;
+}
+
+.collapsible:hover {
+    background-color: #e76f51;
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .menuItems {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smaller for small screens */
+  }
+
+  .items {
+      width: 180px;
+      height: 180px;
+  }
+
+  .items img {
+      height: 100px;
+  }
+}

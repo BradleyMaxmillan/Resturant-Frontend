@@ -1,0 +1,82 @@
+/* About Section Container */
+.about {
+    padding: 60px 20px;
+    background-color:#ffded5;
+    color: #2F2F2F;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main Heading */
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #E27D60; /* Accent color */
+}
+
+/* About Content Area */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Paragraphs */
+.about-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Subheadings */
+.about-content h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #D8A47F; /* Secondary accent */
+}
+
+/* Unordered List Styles */
+.about-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.about-content ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.about-content ul li::before {
+    content: "•";
+    color: #E27D60;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 15px;
+    }
+    
+    .about h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    .about-content p,
+    .about-content ul li,
+    .about-content h3 {
+        font-size: 0.9rem;
+    }
+    
+    .about-content h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}

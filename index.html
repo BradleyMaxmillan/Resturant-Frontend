@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The taco spot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Taco spot logo" class="logo">
+        </div>
+        
+        <!-- Dropdown button -->
+      
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>   
+
+    
+    </nav>
+    
+        <div class="home" id="home">
+
+            <video autoplay muted loop plays-inline class="bgVideo"><source src="images/tacoBG.mp4" type="video/mp4"></video>
+                <h1>The Taco Spot</h1>
+                <p>Your taco obsession starts here</p>
+            
+                <br>
+                <a href="#menu"><button id="explore">  
+                    Explore Menu</button></a>
+        
+
+        </div>
+      
+    <section id="menu">
+        <h2>Here are our Sample Tacos</h2>
+        <div class="menuItems">
+            <div class="items">
+                <h3>Breakfast Tacos</h3>
+                <img src="images/breakfast.jpg" alt="">
+            </div>
+            <div class="items">
+                <h3>Korean BBQ Tacos</h3>
+                <img src="/images/back.jpg" >
+            </div>
+            <div class="items">
+                <h3>CLassic Taco</h3>
+                <img src="images/classic.jpg" alt="classic taco">
+            </div>
+            
+            <div class="items">
+                <h3>Tacos Dorados (Fried Tacos)</h3>
+                <img src="images/tinga.jpg" alt="Tacos Dorados (Fried Tacos)">
+
+            </div>
+            <div class="items">
+                <h3>Vegan Taco</h3>
+                <img src="images/vegan.jpg" alt="vegan taco">
+            </div>
+            <div class="items">
+                <h3>Dessert Taco</h3>
+                <img src="images/straw.jpg" alt="strawberry taco">
+            </div>
+            <div class="items">
+                <h3>Tacos Dorados (Fried Tacos)</h3>
+                <img src="images/tinga.jpg" alt="Tacos Dorados (Fried Tacos)">
+
+            </div>
+            <div class="items">
+                <h3>Vegan Taco</h3>
+                <img src="images/vegan.jpg" alt="vegan taco">
+            </div>
+            <div class="items">
+                <h3>Dessert Taco</h3>
+                <img src="images/straw.jpg" alt="strawberry taco">
+            </div>
+           
+        </div>
+        
+        <button class="collapsible">Tacos</button>
+        <div class="collapsible-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Taco Name</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Classic Beef Taco</td><td>$3.99</td></tr>
+                    <tr><td>Chicken Taco</td><td>$4.49</td></tr>
+                    <tr><td>Veggie Taco</td><td>$3.49</td></tr>
+                    <tr><td>Fish Taco</td><td>$5.99</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <button class="collapsible">Side Dishes</button>
+        <div class="collapsible-content">
+            <table>
+                <thead>
+                    <tr><th>Side Dish</th><th>Price</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Guacamole</td><td>$2.99</td></tr>
+                    <tr><td>Chips & Salsa</td><td>$1.99</td></tr>
+                    <tr><td>Mexican Rice</td><td>$2.49</td></tr>
+                    <tr><td>Refried Beans</td><td>$1.49</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <button class="collapsible">Drinks</button>
+        <div class="collapsible-content">
+            <table>
+                <thead>
+                    <tr><th>Drink</th><th>Price</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Mexican Soda</td><td>$2.50</td></tr>
+                    <tr><td>Jarritos</td><td>$2.99</td></tr>
+                    <tr><td>Iced Tea</td><td>$1.99</td></tr>
+                    <tr><td>Water</td><td>Free</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        </div>
+
+    </section>
+ 
+
+
+
+  
+<script src="index.js"></script>
+</body>
+</html>
