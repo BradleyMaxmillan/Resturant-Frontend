@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-function toggleMenu() {
-    document.querySelector(".navLinks").classList.toggle("show");
+
+function showSideBar() {
+    const sidebar = document.querySelector(".sidebar")
+
+    sidebar.style.display ='flex'
+    sidebar.style.right ='0'
+}
+function closeSideBar() {
+    const sidebar = document.querySelector(".sidebar")
+    sidebar.style.display ='none'
 }

@@ -18,13 +18,27 @@
         <img src="images/logo.png" alt="Taco spot logo" class="logo">
     </div>
     
+    <!-- Dropdown button -->
+  
+    <button class="menu-toggle" onclick="showSideBar()"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt=""></button>
     <ul class="navLinks">
         <li><a href="index.html">Home</a></li>
-        
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
     </ul>   
+
+
 </nav>
+<aside class="sidebar">
+    
+    <ul class="navLinks">
+        <li><button
+            onclick="closeSideBar()" class="close-menu"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt=""></button></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>   
+</aside>
       <!-- About Section -->
 <section id="about" class="about">
     <h2>About Us</h2>
@@ -50,6 +64,8 @@
       <p>Come visit us today and experience the magic of The Taco Spot for yourself! We can't wait to serve you the best tacos in town!</p>
     </div>
   </section>
+
+  <script src="index.js"></script>
    
 </body>
 </html>

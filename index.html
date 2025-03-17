@@ -18,7 +18,7 @@
         
         <!-- Dropdown button -->
       
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <button class="menu-toggle" onclick="showSideBar()"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt=""></button>
         <ul class="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -27,6 +27,17 @@
 
     
     </nav>
+    <aside class="sidebar">
+        
+        <ul class="navLinks">
+            <li><button
+                onclick="closeSideBar()" class="close-menu"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt=""></button></li>   <br><br><br>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>   
+    </aside>
+    
     
         <div class="home" id="home">
 
