@@ -1,82 +1,193 @@
-/* About Section Container */
-.about {
-    padding: 60px 20px;
-    background-color:#ffded5;
-    color: #2F2F2F;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Main Heading */
-.about h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #E27D60; /* Accent color */
-}
-
-/* About Content Area */
-.about-content {
-    max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-/* Paragraphs */
-.about-content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-/* Subheadings */
-.about-content h3 {
-    font-size: 1.8rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: #D8A47F; /* Secondary accent */
-}
-
-/* Unordered List Styles */
-.about-content ul {
-    list-style: none;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    background-color:rgb(255, 217, 198);
+}
+
+/* Header */
+.header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* About Section */
+.about {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.about-box {
+    display: flex;
+    align-items: center;
+    background: white;
     margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-content ul li {
-    font-size: 1rem;
+.about-box img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.about-text {
+    padding: 15px;
+}
+
+.about-text h2 {
+    color: #333;
     margin-bottom: 10px;
-    padding-left: 25px;
-    position: relative;
 }
 
-.about-content ul li::before {
-    content: "•";
-    color: #E27D60;
-    position: absolute;
-    left: 0;
-    top: 0;
+.about-text p {
+    color: #666;
 }
 
-/* Responsive Adjustments */
+/* Footer */
+.footer {
+    background: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin: 10px;
+}
+
+.footer-links h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social i {
+    font-size: 20px;
+    margin: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* Reviews Section */
+.reviews {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .reviews h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .review {
+    background: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #ffc107; 
+  }
+  
+  .reviewer-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reviewer-info strong {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .stars {
+    color: #ffc107;
+    font-size: 18px;
+  }
+  
+  .review p {
+    margin-top: 10px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+
+.review p.review-comment {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+  }
+  
+  .review-header:hover + p.review-comment {
+    opacity: 1;
+    max-height: 200px; 
+  }
+  
+
+  .review:hover p.review-comment {
+    opacity: 1;
+    max-height: 200px;
+  }
+  
+/* Responsive */
 @media (max-width: 768px) {
-    .about {
-        padding: 40px 15px;
+    .about-box {
+        flex-direction: column;
+        text-align: center;
     }
-    
-    .about h2 {
-        font-size: 2rem;
-        margin-bottom: 20px;
+
+    .about-box img {
+        width: 100%;
+        height: auto;
     }
-    
-    .about-content p,
-    .about-content ul li,
-    .about-content h3 {
-        font-size: 0.9rem;
+
+    .footer-links {
+        flex-direction: column;
     }
+    .review {
+        padding: 15px;
+      }
     
-    .about-content h3 {
-        margin-top: 20px;
+      .reviews h2 {
+        font-size: 24px;
+      }
+    
+      .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .review-avatar {
+        margin-right: 0;
         margin-bottom: 10px;
-    }
+      }
 }

@@ -1,81 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The taco spot</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    
-       <link rel="stylesheet" href="styles.css">
-       <link rel="stylesheet" href="styles-about.css">
-
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The taco spot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesA.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-about.css">
+</head>
 <body>
-  <nav class="navbar">
-    <div class="logo">
-        <img src="images/logo.png" alt="Taco spot logo" class="logo">
-    </div>
-    
-    <!-- Dropdown button -->
-  
-    <button class="menu-toggle" onclick="showSideBar()"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt=""></button>
-    <ul class="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>   
 
-
-</nav>
-<aside class="sidebar">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Taco spot logo" class="logo">
+        </div>
+        
+        <!-- Dropdown button -->
+      
+        <button class="menu-toggle" onclick="showSideBar()"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt=""></button>
+        <ul class="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>   
     
-    <ul class="navLinks">
-        <li><button
-            onclick="closeSideBar()" class="close-menu"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt=""></button></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>   
-</aside>
-      <!-- About Section -->
-<section id="about" class="about">
-    <h2>About Us</h2>
-    <div class="about-content">
-      <p>Welcome to The Taco Spot, where every taco is a masterpiece crafted with love and the freshest ingredients! Our story began in 2010, when we decided to share our passion for authentic, flavorful tacos with the world. Over the years, we've grown from a small family-owned food truck to a beloved local taco shop that serves thousands of happy customers every year.</p>
-      
-      <h3>Our Mission</h3>
-      <p>At The Taco Spot, our mission is simple: to provide delicious, high-quality tacos that bring people together. We believe in using only the best ingredients, from locally sourced meats and fresh vegetables to our homemade tortillas and sauces. Every taco we serve is made with care and attention to detail, ensuring you get the best taste in every bite.</p>
-      
-      <h3>Our Values</h3>
-      <ul style="text-align: left;">
-        <li><strong>Freshness:</strong> We use fresh ingredients daily to ensure that every taco is packed with flavor and nutrition.</li>
-        <li><strong>Authenticity:</strong> Our tacos are inspired by traditional Mexican recipes, with a modern twist that makes them uniquely ours.</li>
-        <li><strong>Community:</strong> We believe in supporting local businesses and are proud to be a part of the vibrant community that has helped us grow.</li>
-        <li><strong>Sustainability:</strong> We are committed to reducing waste and using sustainable practices in all aspects of our business.</li>
-      </ul>
-      
-      <h3>Why Choose The Taco Spot?</h3>
-      <p>What sets The Taco Spot apart is our commitment to flavor, quality, and service. Whether you're craving a classic taco or something with a little more flair, our menu has something for everyone. Plus, we offer a variety of options, including vegetarian, gluten-free, and specialty tacos, to cater to all tastes and dietary needs.</p>
-      
-      <p>We also believe in giving back to our community, which is why we regularly partner with local charities and organizations to make a positive impact. Every taco you enjoy at The Taco Spot helps support causes that are close to our heart.</p>
+    
+    </nav>
+    <aside class="sidebar">
+        
+        <ul class="navLinks">
+            <li><button
+                onclick="closeSideBar()" class="close-menu"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt=""></button></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>   
+    </aside>
+    <!-- About Sections -->
+    <section class="about">
+        <div class="about-box">
+            <img src="images/classic.jpg" alt="Ice Cream">
+            <div class="about-text" style="text-align: left;">
+                <h2 style="text-align: left;">About Us</h2>
+                <p>Welcome to The Taco Spot, where every taco is a masterpiece crafted with love and the freshest ingredients! Our story began in 2010, when we decided to share our passion for authentic, flavorful tacos with the world. Over the years, we've grown from a small family-owned food truck to a beloved local taco shop that serves thousands of happy customers every year.</p>
+            </div>
+        </div>
+
+        <div class="about-box">
+            <div class="about-text" style="text-align: left;">
+                <h2 style="text-align: left;">Purpose & Values</h2>
+                <p>At The Taco Spot, our mission is simple: to provide delicious, high-quality tacos that bring people together. We believe in using only the best ingredients, from locally sourced meats and fresh vegetables to our homemade tortillas and sauces. Every taco we serve is made with care and attention to detail, ensuring you get the best taste in every bite.</p>
+            </div>
+            <img src="images/Carne Asada Tacos.jpeg" alt="Delicious Food">
+        </div>
+
+        <div class="about-box">
+            <img src="images/classic.jpg" alt="History">
+            <div class="about-text" style="text-align: left;">
+                <h2 style="text-align: left;">Why Choose The Taco Spot?</h2>
+                <p>What sets The Taco Spot apart is our commitment to flavor, quality, and service. Whether you're craving a classic taco or something with a little more flair, our menu has something for everyone. Plus, we offer a variety of options, including vegetarian, gluten-free, and specialty tacos, to cater to all tastes and dietary needs.</p>
       
       <p>Come visit us today and experience the magic of The Taco Spot for yourself! We can't wait to serve you the best tacos in town!</p>
-    </div>
-  </section>
-  <footer class="social-media">
-    <div><h3>Follow Us On</h3></div>
-    <div class="social-icons">
-        <a href="https://facebook.com/tacospot"><i class="fab fa-facebook"></i></a>
-        <a href="https://instagram.com/tacospot"><i class="fab fa-twitter"></i></a>
-        <a href="https://twitter.com/tacospot"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com/tacospot"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p>&copy; 2025 All rights reserved.</p>
-  </div></footer>
+            </div>
+        </div>
 
-  <script src="index.js"></script>
-   
+        <section class="reviews">
+            <h2>What Our Customers Say</h2>
+          
+            <div class="review">
+              <div class="review-header">
+                <img src="images/john.jpg" alt="John Lukr" class="review-avatar">
+                <div class="reviewer-info">
+                  <strong>John Luke</strong>
+                  <span class="stars">★★★★☆</span>
+                </div>
+              </div>
+              <p class="review-comment">"The tacos here are absolutely amazing! Fresh ingredients and friendly staff. Highly recommend."</p>
+            </div>
+          
+            <div class="review">
+              <div class="review-header">
+                <img src="images/jane.jpg" alt="Jane Smith" class="review-avatar">
+                <div class="reviewer-info">
+                  <strong>Jane Smith</strong>
+                  <span class="stars">★★★★★</span>
+                </div>
+              </div>
+              <p class="review-comment">"I've been coming here for years and the quality never disappoints. Best tacos in town!"</p>
+            </div>
+          
+            <div class="review">
+              <div class="review-header">
+                <img src="images/mark.webp" alt="Mike Johnson" class="review-avatar">
+                <div class="reviewer-info">
+                  <strong>Mike Johnson</strong>
+                  <span class="stars">★★★☆☆</span>
+                </div>
+              </div>
+              <p class="review-comment">"Good variety of tacos. I love the vegetarian options, but I wish they had more spice level choices."</p>
+            </div>
+          
+            <div class="review">
+              <div class="review-header">
+                <img src="images/anna.jpg" alt="Emily Turner" class="review-avatar">
+                <div class="reviewer-info">
+                  <strong>Emily Turner</strong>
+                  <span class="stars">★★★★★</span>
+                </div>
+              </div>
+              <p class="review-comment">"Absolutely phenomenal! The homemade tortillas make all the difference. Highly recommended."</p>
+            </div>
+          </section>
+          
+
+    </section>
+
+    <!-- Footer -->
+    
+    <footer class="social-media">
+        <div><h3>Follow Us On</h3></div>
+        <div class="social-icons">
+            <a href="https://facebook.com/tacospot"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/tacospot"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/tacospot"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/tacospot"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 All rights reserved.</p>
+      </div></footer>
+    
+      <script src="index.js"></script>
+
 </body>
 </html>
