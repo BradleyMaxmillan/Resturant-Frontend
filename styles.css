@@ -168,7 +168,7 @@ a:hover {
       }
 
 
-      #explore {
+      #explore,.submit-button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.3rem;
@@ -183,7 +183,7 @@ a:hover {
 
 }
 
-#explore:hover {
+#explore:hover ,.submit-button:hover {
     background-color: #5bcdf3;
     transition: all  0.2s  linear ;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
@@ -277,4 +277,19 @@ right: -30000;
   .items img {
       height: 100px;
   }
+}
+footer{
+ padding: 5px;
+ line-height: 30px;
+  display: flex;
+ 
+ flex-direction: row;
+ flex-wrap: nowrap;
+ align-items: center;
+ justify-content:center;
+
+  gap: 30px;
+
+  background-color:rgb(255, 155, 127);
+
 }
