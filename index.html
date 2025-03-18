@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,50 +9,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">
             <img src="images/logo.png" alt="Taco spot logo" class="logo">
         </div>
-        
-        <!-- Dropdown button -->
-      
-        <button class="menu-toggle" onclick="showSideBar()"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt=""></button>
-        <ul class="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>   
+        <input type="checkbox" class="side-check" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-btn">
+            <img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt="menuImg"
+                class="menuImg">
+        </label>
+        <label for="sidebar-active" id="overlay">
+        </label>
 
-    
-    </nav>
-    <aside class="sidebar">
-        
-        <ul class="navLinks">
-            <li><button
-                onclick="closeSideBar()" class="close-menu"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt=""></button></li>   <br><br><br>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>   
-    </aside>
-    
-    
-        <div class="home" id="home">
 
-            <video autoplay muted loop plays-inline class="bgVideo"><source src="images/tacoBG.mp4" type="video/mp4"></video>
-                <h1>The Taco Spot</h1>
-                <p>Your taco obsession starts here</p>
-            
-                <br>
-                <a href="#menu"><button id="explore">  
-                    Explore Menu</button></a>
-        
+        <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-btn">
+                <img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt="menuImg"
+                    class="menuImg">
+            </label>
 
+
+            <ul class="navLinks">
+                <li class="homeLinks"><a href="index.html">Home</a></li>
+                <li class="homeLinks"><a href="about.html">About Us</a></li>
+                <li class="homeLinks"><a href="contact.html">Contact Us</a></li>
+            </ul>
         </div>
-      
+
+        </label>
+
+    </nav>
+
+
+    <div class="home" id="home">
+
+        <video autoplay muted loop plays-inline class="bgVideo">
+            <source src="images/tacoBG.mp4" type="video/mp4">
+        </video>
+        <h1>The Taco Spot</h1>
+        <p>Your taco obsession starts here</p>
+
+        <br>
+        <a href="#menu"><button id="explore">
+                Explore Menu</button></a>
+
+
+    </div>
+
     <section id="menu">
         <h2>Here are our Sample Tacos</h2>
         <div class="menuItems">
@@ -61,13 +69,13 @@
             </div> -->
             <div class="items">
                 <h3>Korean BBQ Tacos</h3>
-                <img src="/images/back.jpg" >
+                <img src="/images/back.jpg">
             </div>
             <div class="items">
                 <h3>CLassic Taco</h3>
                 <img src="images/classic.jpg" alt="classic taco">
             </div>
-            
+
             <div class="items">
                 <h3>Tacos Dorados (Fried Tacos)</h3>
                 <img src="images/tinga.jpg" alt="Tacos Dorados (Fried Tacos)">
@@ -94,9 +102,9 @@
                 <h3>Dessert Taco</h3>
                 <img src="images/Carne Asada Tacos (Grilled Steak Tacos).jpeg" alt="strawberry taco">
             </div>
-           
+
         </div>
-        
+
         <button class="collapsible">Tacos</button>
         <div class="collapsible-content">
             <table>
@@ -107,50 +115,94 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Classic Beef Taco</td><td>$3.99</td></tr>
-                    <tr><td>Chicken Taco</td><td>$4.49</td></tr>
-                    <tr><td>Veggie Taco</td><td>$3.49</td></tr>
-                    <tr><td>Fish Taco</td><td>$5.99</td></tr>
+                    <tr>
+                        <td>Classic Beef Taco</td>
+                        <td>$3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Taco</td>
+                        <td>$4.49</td>
+                    </tr>
+                    <tr>
+                        <td>Veggie Taco</td>
+                        <td>$3.49</td>
+                    </tr>
+                    <tr>
+                        <td>Fish Taco</td>
+                        <td>$5.99</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-        
+
         <button class="collapsible">Side Dishes</button>
         <div class="collapsible-content">
             <table>
                 <thead>
-                    <tr><th>Side Dish</th><th>Price</th></tr>
+                    <tr>
+                        <th>Side Dish</th>
+                        <th>Price</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Guacamole</td><td>$2.99</td></tr>
-                    <tr><td>Chips & Salsa</td><td>$1.99</td></tr>
-                    <tr><td>Mexican Rice</td><td>$2.49</td></tr>
-                    <tr><td>Refried Beans</td><td>$1.49</td></tr>
+                    <tr>
+                        <td>Guacamole</td>
+                        <td>$2.99</td>
+                    </tr>
+                    <tr>
+                        <td>Chips & Salsa</td>
+                        <td>$1.99</td>
+                    </tr>
+                    <tr>
+                        <td>Mexican Rice</td>
+                        <td>$2.49</td>
+                    </tr>
+                    <tr>
+                        <td>Refried Beans</td>
+                        <td>$1.49</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-        
+
         <button class="collapsible">Drinks</button>
         <div class="collapsible-content">
             <table>
                 <thead>
-                    <tr><th>Drink</th><th>Price</th></tr>
+                    <tr>
+                        <th>Drink</th>
+                        <th>Price</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Mexican Soda</td><td>$2.50</td></tr>
-                    <tr><td>Jarritos</td><td>$2.99</td></tr>
-                    <tr><td>Iced Tea</td><td>$1.99</td></tr>
-                    <tr><td>Water</td><td>Free</td></tr>
+                    <tr>
+                        <td>Mexican Soda</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Jarritos</td>
+                        <td>$2.99</td>
+                    </tr>
+                    <tr>
+                        <td>Iced Tea</td>
+                        <td>$1.99</td>
+                    </tr>
+                    <tr>
+                        <td>Water</td>
+                        <td>Free</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-        
+
 
         </div>
 
     </section>
     <footer class="social-media">
-        <div><h3>Follow Us On</h3></div>
+        <div>
+            <h3>Follow Us On</h3>
+        </div>
         <div class="social-icons">
             <a href="https://facebook.com/tacospot"><i class="fab fa-facebook"></i></a>
             <a href="https://instagram.com/tacospot"><i class="fab fa-twitter"></i></a>
@@ -158,12 +210,14 @@
             <a href="https://linkedin.com/tacospot"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>&copy; 2025 All rights reserved.</p>
-      </div></footer>
- 
+        </div>
+    </footer>
 
 
 
-  
-<script src="index.js"></script>
+
+
+    <script src="index.js"></script>
 </body>
+
 </html>

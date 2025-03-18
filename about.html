@@ -12,32 +12,36 @@
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/logo.png" alt="Taco spot logo" class="logo">
-        </div>
-        
-        <!-- Dropdown button -->
-      
-        <button class="menu-toggle" onclick="showSideBar()"><img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt=""></button>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="Taco spot logo" class="logo">
+    </div>
+    <input type="checkbox" class="side-check" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-btn">
+        <img src="images/menu_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="70px" alt="menuImg"
+            class="menuImg">
+    </label>
+    <label for="sidebar-active" id="overlay">
+    </label>
+
+
+    <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-btn">
+            <img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt="menuImg"
+                class="menuImg">
+        </label>
+
+
         <ul class="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>   
-    
-    
-    </nav>
-    <aside class="sidebar">
-        
-        <ul class="navLinks">
-            <li><button
-                onclick="closeSideBar()" class="close-menu"><img src="images/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" width="50px" alt=""></button></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>   
-    </aside>
+            <li class="homeLinks"><a href="index.html">Home</a></li>
+            <li class="homeLinks"><a href="about.html">About Us</a></li>
+            <li class="homeLinks"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    </label>
+
+</nav>
     <!-- About Sections -->
     <section class="about">
         <div class="about-box">
